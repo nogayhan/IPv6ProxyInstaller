@@ -62,8 +62,8 @@ echo "● Selected: $PROXY_COUNT"
 ####
 echo "↓ Proxies protocol (http, socks5; default http):"
 read PROXY_PROTOCOL
-if [[ PROXY_PROTOCOL != "socks5" ]]; then
-    PROXY_PROTOCOL="http"
+if [[ PROXY_PROTOCOL != "http" ]]; then
+    PROXY_PROTOCOL="socks5"
 fi
 echo "● Selected: $PROXY_PROTOCOL"
 
@@ -149,6 +149,9 @@ cat >~/3proxy/3proxy.cfg <<END
 daemon
 maxconn 10000
 nserver 1.1.1.1
+nserver 9.9.9.9
+nserver 8.8.8.8
+nserver 8.8.4.4
 nscache 65536
 timeouts 1 5 30 60 180 1800 15 60
 setgid 65535
