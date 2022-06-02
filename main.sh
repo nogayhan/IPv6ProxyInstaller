@@ -148,8 +148,6 @@ cat >~/3proxy/3proxy.cfg <<END
 
 daemon
 maxconn 10000
-nserver 1.1.1.1
-nserver 9.9.9.9
 nserver 8.8.8.8
 nserver 8.8.4.4
 nscache 65536
