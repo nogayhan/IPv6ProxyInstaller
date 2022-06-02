@@ -62,8 +62,8 @@ echo "● Selected: $PROXY_COUNT"
 ####
 echo "↓ Proxies protocol (http, socks5; default http):"
 read PROXY_PROTOCOL
-if [[ PROXY_PROTOCOL != "http" ]]; then
-    PROXY_PROTOCOL="socks5"
+if [[ PROXY_PROTOCOL != "socks5" ]]; then
+    PROXY_PROTOCOL="http"
 fi
 echo "● Selected: $PROXY_PROTOCOL"
 
