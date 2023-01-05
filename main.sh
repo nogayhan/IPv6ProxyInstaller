@@ -155,9 +155,11 @@ timeouts 1 5 30 60 180 1800 15 60
 setgid 65535
 setuid 65535
 stacksize 6000
-flush
+auth none
 allow *
+flush
 END
+
 
 if [[ "$PROXY_LOGIN" ]]; then
     cat >>~/3proxy/3proxy.cfg <<END
