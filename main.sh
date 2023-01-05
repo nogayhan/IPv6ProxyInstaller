@@ -156,6 +156,7 @@ setgid 65535
 setuid 65535
 stacksize 6000
 flush
+allow *
 END
 
 if [[ "$PROXY_LOGIN" ]]; then
